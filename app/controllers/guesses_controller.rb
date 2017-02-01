@@ -12,4 +12,9 @@ class GuessesController < ApplicationController
     end
     render("/all_guesses.html.erb")
   end
+  def rule
+    @answer_guess = params[:rule]
+    render("/show_answer.html.erb")
+  end
+
 end
